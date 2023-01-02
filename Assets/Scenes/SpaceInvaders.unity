@@ -200,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143019385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -0.1, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.1952, y: -0.6036, z: 1}
+  m_LocalScale: {x: 1.545201, y: 1.5955721, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -245,15 +245,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -306,15 +306,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -674,15 +674,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2369062776193324066, guid: 3d4f7277b58d1804693a9b771da66628, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -731,7 +731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282605717347492440, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.19
+      value: -4.1900024
       objectReference: {fileID: 0}
     - target: {fileID: 8282605717347492440, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
       propertyPath: m_LocalPosition.z
@@ -743,15 +743,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282605717347492440, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8282605717347492440, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8282605717347492440, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8282605717347492440, guid: 390ecafa345db6d4a90ed799ee01b656, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
