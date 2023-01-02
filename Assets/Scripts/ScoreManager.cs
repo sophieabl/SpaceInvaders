@@ -23,18 +23,18 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         highscore = PlayerPrefs.GetInt("highscore", 0);
-        scoreText.text = "Shots: " + score.ToString() + "/50";
+        scoreText.text = "Shots: " + score.ToString() + "/60";
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();
     }
 
     public void AddPoint() 
     {
         score += 1;
-        scoreText.text = "Shots: " + score.ToString() + "/50";
+        scoreText.text = "Shots: " + score.ToString() + "/60";
         if (highscore > score){
             PlayerPrefs.SetInt("highscore", score);
         }
-        if (score > 49){
+        if (score > 59){
            SceneManager.LoadScene("GameOver");
         }
         
