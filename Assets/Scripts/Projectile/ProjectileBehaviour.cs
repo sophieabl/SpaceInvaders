@@ -7,7 +7,6 @@ public class ProjectileBehaviour : MonoBehaviour
     public float speed;
     public float destroyAfter = 3f;
 
-    
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +22,23 @@ public class ProjectileBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
+
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.up * speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if the other object is the projectile by its tag
+        if (collision.tag == "Laser")
+        {
+
+           // Destroy(gameObject);
+
+            // Destroy the projectile game object
+            Destroy(collision.gameObject);
+        }
     }
 }
