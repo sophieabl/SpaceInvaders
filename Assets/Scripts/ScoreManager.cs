@@ -27,14 +27,14 @@ public class ScoreManager : MonoBehaviour
         highscore = PlayerPrefs.GetInt("highscore", 60);
         scoreText.text = "Shots: " + score.ToString() + "/60";
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();
-        alienCounter.text = aliens.ToString() + "/27";
+        alienCounter.text = aliens.ToString() + " / 27";
     }
 
     public void AddPoint() 
     {
         score += 1;
         scoreText.text = "Shots: " + score.ToString() + "/60";
-        if (score > highscore){
+        if (aliens >= 27 && score < highscore){
             PlayerPrefs.SetInt("highscore", score);
         }
         if (score > 59){
@@ -45,7 +45,7 @@ public class ScoreManager : MonoBehaviour
     public void AlienShot()
     {
           aliens += 1; 
-          alienCounter.text = aliens.ToString() + "/27";
+          alienCounter.text = aliens.ToString() + " / 27";
           if (aliens > 26)
           {
             SceneManager.LoadScene("GameOver");
