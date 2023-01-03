@@ -18,7 +18,7 @@ public class Shooter : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             Shoot();
-            ScoreManager.instance.AddPoint();
+            ScoreManager.instance.AddPoint(); // Function that counts the Bullets that have been fired 
         }
         
     }

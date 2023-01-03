@@ -7,18 +7,6 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public AudioClip clip; 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if the other object is the projectile by its tag
@@ -31,7 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
 
             // Destroy the Alien game object (the one this script is on)
             Destroy(gameObject);
-            ScoreManager.instance.AlienShot();
+            ScoreManager.instance.AlienShot(); // calls Function that counts the aliens that have been shot 
 
             // Destroy the projectile game object
             Destroy(collision.gameObject);

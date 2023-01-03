@@ -199,9 +199,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143019385}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1952, y: -0.6036, z: 1}
-  m_LocalScale: {x: 1.545201, y: 1.5955721, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.2051, y: -0.2292, z: 1}
+  m_LocalScale: {x: 1.0425471, y: 1.034569, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 1279294805}
   - component: {fileID: 1279294804}
   m_Layer: 0
-  m_Name: barricade
+  m_Name: Barricade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 1372488989}
   - component: {fileID: 1372488992}
   m_Layer: 0
-  m_Name: barricade 2
+  m_Name: Barricade 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

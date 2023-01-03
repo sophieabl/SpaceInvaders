@@ -7,6 +7,7 @@ public class ScenesChanger : MonoBehaviour
 {
     public void LoadLevelScene()
     {
+        // Changes Scene when restarting the Game 
         SceneManager.LoadScene("SpaceInvaders");
     
     }

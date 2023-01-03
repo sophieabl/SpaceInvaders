@@ -29,23 +29,29 @@ public class ScoreManager : MonoBehaviour
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();
         alienCounter.text = aliens.ToString() + " / 27";
     }
-
+ 
+    // Function that adds a point when shoting a bullet 
     public void AddPoint() 
     {
         score += 1;
         scoreText.text = "Shots: " + score.ToString() + "/60";
+        // if your need less bullets that before, score will be new highscore 
         if (aliens >= 27 && score < highscore){
             PlayerPrefs.SetInt("highscore", score);
         }
+        // If bullet limit is reached GameOver screen appears 
         if (score > 59){
            SceneManager.LoadScene("GameOver");
         }
         
     }
+
+    // Function that counts the aliens that have been shot 
     public void AlienShot()
     {
           aliens += 1; 
           alienCounter.text = aliens.ToString() + " / 27";
+          // If all aliens are destroyed GameOver 
           if (aliens > 26)
           {
             SceneManager.LoadScene("GameOver");
