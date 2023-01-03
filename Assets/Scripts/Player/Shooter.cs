@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Shooter : MonoBehaviour
 {
@@ -21,9 +20,6 @@ public class Shooter : MonoBehaviour
             Shoot();
             ScoreManager.instance.AddPoint();
         }
-        //if (score > 50){
-           // SceneManager.LoadScene("GameOver");
-        //}
         
     }
 

@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public AudioClip clip;
+    public AudioClip clip; 
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class EnemyBehaviour : MonoBehaviour
 
             // Destroy the Alien game object (the one this script is on)
             Destroy(gameObject);
+            ScoreManager.instance.AlienShot();
 
             // Destroy the projectile game object
             Destroy(collision.gameObject);

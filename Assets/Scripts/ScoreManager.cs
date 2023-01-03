@@ -11,9 +11,11 @@ public class ScoreManager : MonoBehaviour
 
     public TMP_Text scoreText;
     public TMP_Text highscoreText;
+    public TMP_Text alienCounter;
 
     int score = 0;
-    int highscore = 0;
+    int highscore = 60;
+    int aliens = 0; 
 
     private void Awake(){
         instance = this; 
@@ -22,21 +24,31 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        highscore = PlayerPrefs.GetInt("highscore", 0);
+        highscore = PlayerPrefs.GetInt("highscore", 60);
         scoreText.text = "Shots: " + score.ToString() + "/60";
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();
+        alienCounter.text = aliens.ToString() + "/27";
     }
 
     public void AddPoint() 
     {
         score += 1;
         scoreText.text = "Shots: " + score.ToString() + "/60";
-        if (highscore > score){
+        if (score > highscore){
             PlayerPrefs.SetInt("highscore", score);
         }
         if (score > 59){
            SceneManager.LoadScene("GameOver");
         }
         
+    }
+    public void AlienShot()
+    {
+          aliens += 1; 
+          alienCounter.text = aliens.ToString() + "/27";
+          if (aliens > 26)
+          {
+            SceneManager.LoadScene("GameOver");
+          }
     }
 }
